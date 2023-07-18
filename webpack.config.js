@@ -1,26 +1,30 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path')
 
 module.exports = {
-  entry: {
-    index: '/src/index.js'
-  },
+  mode: 'development',
+  entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
-  module: { rules: [] },
-  plugins: [
-    new HtmlWebpackPlugin({ 
-      title: 'City Life',
-      template: './src/index.html'
-    })
-  ],
   devServer: {
-    port: 5000,
+    static: {
+      directory: path.resolve(__dirname, 'dist'),
+    },
+    port: 3000,
     open: true,
-    static: path.resolve(__dirname, 'dist')
+    hot: true,
+    compress: true,
+    historyApiFallback: true,
   },
-  mode: 'production'
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        include: path.resolve(__dirname, 'src'),
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
+  },
 }
 
