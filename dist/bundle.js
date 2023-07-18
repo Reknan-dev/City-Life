@@ -1,8 +1,5 @@
 (() => {
   function e() {
-    document.getElementById("cityInput").value = "Los Angeles";
-  }
-  function t() {
     let e = document
       .getElementById("cityInput")
       .value.toLowerCase()
@@ -48,17 +45,16 @@
       });
   }
   window.addEventListener("DOMContentLoaded", function () {
-    t(),
+    (document.getElementById("cityInput").value = "Los Angeles"),
       document.getElementById("cityInput").classList.add("city-input-focused"),
       e();
   }),
-    e(),
     document
       .querySelector(".js-search-button")
       .addEventListener("click", () => {
-        t();
+        e();
       }),
-    document.body.addEventListener("keydown", (e) => {
-      "Enter" === e.key && t();
+    document.body.addEventListener("keydown", (t) => {
+      "Enter" === t.key && e();
     });
 })();
