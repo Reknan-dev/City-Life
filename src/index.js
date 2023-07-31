@@ -16,7 +16,6 @@ function getCityInfo() {
   let formattedCityName = cityName.toLowerCase().replace(/\s/g, "-");
   
   apiCall(`https://api.teleport.org/api/urban_areas/slug:${formattedCityName}/scores/`)
-    .then((response) => response.json())
     .then((data) => {
       displayCityInfo(data);
     })
