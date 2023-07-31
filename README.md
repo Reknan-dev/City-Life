@@ -18,16 +18,20 @@ Web App
 
 
   <p align="center">
-    A Pokemon Counter with sounds and animation
+    Whether you're a tourist looking for the best vacation destination, a professional evaluating a potential job opportunity,
+      or simply a curious individual eager to learn more about
+      your own city, City Life is here to assist you.
+      Enter the name of your city in the search bar, and within moments, you'll see a list of categories,
+      each with a score that reflects the quality and benchmark features.
     <br />
-    <a href="https://github.com/Reknan-dev/Counter"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Reknan-dev/City-Life"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://reknan-dev.github.io/Counter/">View Demo</a>
+    <a href="https://citylife-s2i.netlify.app/">View Demo</a>
     ·
-    <a href="https://github.com/Reknan-dev/Counter/issues">Report Bug</a>
+    <a href="https://github.com/Reknan-dev/City-Life/issues">Report Bug</a>
     ·
-    <a href="https://github.com/Reknan-dev/Counter/issues">Request Feature</a>
+    <a href="https://github.com/Reknan-dev/City-Life/issues">Request Feature</a>
   </p>
 </div>
 
@@ -56,7 +60,8 @@ Web App
 
 ## About The Project
 
-  I created this project to practice the JavaScript language and start creating something a little more elaborate with CSS, since I'm new to development
+ 
+I created this web app for my studies at Start2Impact University, as a practice project for my advanced Javascript skills
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -77,7 +82,8 @@ Web App
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-There aren't many uses for the counter, but some of them might be keeping track of a score or just counting without using your hands since you only have ten fingers.
+ Enter the name of your city in the search bar, and within moments, you'll see a list of categories,
+ each with a score that reflects the quality and benchmark features.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -119,7 +125,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Benedetto Caiazzo - benedettocaiazzo8409@gmail.com
 
-Project Link: [https://github.com/Reknan-dev/Counter](https://github.com/Reknan-dev/Counter)
+Project Link: [https://github.com/Reknan-dev/City-Life](https://github.com/Reknan-dev/City-Life)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
