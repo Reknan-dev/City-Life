@@ -1,3 +1,5 @@
+import { apiCall } from "./js/api";
+
 window.addEventListener("DOMContentLoaded", function () {
   setInitialCity();
   document.getElementById("cityInput").classList.add("city-input-focused");
@@ -12,8 +14,8 @@ function setInitialCity() {
 function getCityInfo() {
   let cityName = document.getElementById("cityInput").value;
   let formattedCityName = cityName.toLowerCase().replace(/\s/g, "-");
-
-  fetch(`https://api.teleport.org/api/urban_areas/slug:${formattedCityName}/scores/`)
+  
+  apiCall(`https://api.teleport.org/api/urban_areas/slug:${formattedCityName}/scores/`)
     .then((response) => response.json())
     .then((data) => {
       displayCityInfo(data);
