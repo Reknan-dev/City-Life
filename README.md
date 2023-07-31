@@ -3,7 +3,7 @@ Web App
 
 
 <div align="center">
-    <img src="/src/img/background" alt="Logo" width="80" height="80">
+    <img src="/src/img/background.jpg" alt="Logo" width="80" height="80">
 </div>
 
 
