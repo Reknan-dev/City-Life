@@ -10,6 +10,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
+    publicPath: "/"
   },
   module: {
     rules: [
@@ -17,6 +18,15 @@ module.exports = {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
+      {
+        test: /\.(jpg|png)$/,
+        issuer: /\.(css)$/,
+        type: 'asset/resource',
+        generator: {
+          filename: 'img/[name].[ext]',
+        },
+      },
+    
     ],
   },
   plugins: [
