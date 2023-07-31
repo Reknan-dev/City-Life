@@ -15,10 +15,6 @@ Web App
 </div>
 <br />
 
-<div align="center">
-  <a href="https://github.com/Reknan-dev/Counter">
-    <img src="/assets/img/title.png">
-    </a>
 
 
   <p align="center">
